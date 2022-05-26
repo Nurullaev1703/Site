@@ -1,0 +1,117 @@
+@import 'fonts';
+@import 'reset';
+
+
+$main:#FF3D00;
+$second:#0085FF;
+$black:#202020;
+$white:#ffffff;
+$stroke:#E3E3E3;
+$placeholder:#808080;
+$bg: #F7F7F7;
+
+@mixin btn($color){
+    width: 100%;
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $color;
+    padding: 10px 0;
+    font-size: 14px;
+    @include font(900);
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+@mixin activeBtn($color){
+    @include btn($color);
+    background-color: $color;
+    color: white;
+}
+
+@mixin font($size){
+    font-family: 'Montserrat';
+    font-weight: $size;
+}
+@mixin cover($height){
+    position: relative;
+    width: 100%;
+    padding-top: $height;
+}
+
+
+form{
+    background-color: $white;
+    padding: 15px 20px 25px 20px;
+    border: 1px solid $stroke;
+    border-radius: 8px;
+}
+input[type="text"], input[type="password"]{
+    width: 100%;
+    margin-left: -11px;
+    border: 1px solid $stroke;
+    border-radius: 6px;
+    padding: 7px 11px;
+    @include font(700);
+    font-size: 10px;
+}
+.form-container{
+    margin: 0 11px;
+}
+.btn{
+    @include btn($main);
+}
+.btn.second{
+    @include btn($second);
+}
+.btn:hover{
+    @include activeBtn($main);
+}
+.btn.second:hover{
+    @include activeBtn($second);
+}
+h1,h2,h3{
+    @include font(900);
+}
+h4{
+    @include font(700);
+}
+p{
+    @include font(400);
+    font-size: 14px;
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 14px;
+}
+h4{
+    font-size: 12px;
+}
+.cover{
+    @include cover(100%);
+}
+.cover img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cover.rectangle{
+    @include cover(350 / (543 / 100) * 1% );
+}
+
+body{
+    background-color: $bg;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 10px;
+}
