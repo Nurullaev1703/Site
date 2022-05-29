@@ -1,14 +1,22 @@
 {
-  "name": "geron_10",
+  "name": "geron",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "node-sass": "sass -w assets/scss/:assets/css/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurullaev1703/geron.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nurullaev1703/geron/issues"
+  },
+  "homepage": "https://github.com/Nurullaev1703/geron#readme",
   "dependencies": {
     "node-sass": "^7.0.1"
   }

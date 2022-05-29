@@ -24,14 +24,14 @@ input[type="text"], input[type="password"]{
 .btn{
     @include btn($main);
 
-    :hover{
+    &:hover{
         @include activeBtn($main);
     }
 
-    .second{
+    &.second{
         @include btn($second);
 
-        :hover{
+        &:hover{
             @include activeBtn($second);
         }
     }
@@ -69,7 +69,7 @@ h4{
         width: 100%;
         height: 100%;
     }
-    .rectangle{
+    &.rectangle{
         @include cover(calc(350 / (543 / 100)) * 1% );
     }
 }
