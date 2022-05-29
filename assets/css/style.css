@@ -54,22 +54,32 @@ input[type=text] {
 
 header {
   padding: 36px 0;
+  position: relative;
 }
-header .line {
+header .burger-menu {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .burger-menu .line {
   height: 1px;
   width: 18px;
   background-color: #202020;
   margin-bottom: 3px;
   cursor: pointer;
 }
-header .line:last-child {
+header .burger-menu .line:last-child {
   margin-bottom: 0;
 }
 header .logo {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+header .logo.active {
+  color: #ef5ad8;
 }
 header .logo h1 {
   font-size: 24px;
@@ -80,6 +90,8 @@ header .logo h1:hover {
 }
 header nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header nav a {
   width: 24px;
