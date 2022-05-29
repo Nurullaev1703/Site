@@ -220,7 +220,7 @@ h4 {
   width: 100%;
   padding-top: 100%;
 }
-.cover img {
+.cover img, .cover-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -254,6 +254,83 @@ svg {
 }
 svg:hover {
   fill: #FF3D00;
+}
+
+header {
+  padding: 36px 0;
+  position: relative;
+}
+header .burger-menu {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .burger-menu .line {
+  height: 1px;
+  width: 18px;
+  background-color: #202020;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+header .burger-menu .line:last-child {
+  margin-bottom: 0;
+}
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+header .logo.active {
+  color: #ef5ad8;
+}
+header .logo h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+header .logo h1:hover {
+  color: #ef5ad8;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav a:first-child {
+  margin-right: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container {
+  width: 49%;
+  background-color: #0085FF;
+  border-radius: 8px;
+}
+.main img {
+  border-radius: 8px;
+}
+.main .cover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main h1 {
+  color: #ffffff;
+  margin: 36px 40px;
+}
+.main h1:first-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

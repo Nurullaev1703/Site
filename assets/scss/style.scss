@@ -63,7 +63,7 @@ h4{
 .cover{
     @include cover(100%);
     
-    img{
+    img, &-content{
         position: absolute;
         top:0;
         left: 0;
@@ -96,3 +96,6 @@ svg{
         fill: $main;
     }
 }
+
+@import 'sections/header';
+@import 'sections/main';
