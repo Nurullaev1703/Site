@@ -1,0 +1,46 @@
+header{
+    padding: 36px 0;
+
+    .line{
+        height: 1px;
+        width: 18px;
+        background-color: $black;
+        margin-bottom: 3px;
+        cursor: pointer;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .logo{
+        position: absolute;
+        top: 0;
+        left:  0;
+        cursor: pointer;
+        
+        h1{
+            font-size: 24px;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $logo;
+            }
+        }
+    }
+    nav{
+        display: flex;
+
+        a{
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a:first-child{
+            margin-right: 20px;
+        }
+    }
+}

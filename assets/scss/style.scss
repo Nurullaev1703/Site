@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'colors';
 @import 'mixin';
+@import 'sections/header';
 
 form{
     background-color: $white;
@@ -86,4 +87,12 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
+}
+svg{
+    fill: $black;
+    transition: 0.4s;
+
+    &:hover{
+        fill: $main;
+    }
 }
