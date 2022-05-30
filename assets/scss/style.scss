@@ -2,7 +2,7 @@
 @import 'reset';
 @import 'colors';
 @import 'mixin';
-@import 'sections/header';
+
 
 form{
     background-color: $white;
@@ -46,7 +46,12 @@ h4{
 }
 p{
     @include font(400);
-    font-size: 14px;
+    font-size: 12px;
+
+    &.context{
+        font-size: 10px;
+        color: $gray;
+    }
 }
 h1{
     font-size: 20px;
@@ -59,6 +64,9 @@ h3{
 }
 h4{
     font-size: 12px;
+}
+section{
+    margin-bottom: 80px;
 }
 .cover{
     @include cover(100%);
@@ -97,5 +105,15 @@ svg{
     }
 }
 
+.card{
+    background: $white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    &-content{
+        padding:10px; 
+    } 
+}
+
 @import 'sections/header';
 @import 'sections/main';
+@import 'sections/cards';

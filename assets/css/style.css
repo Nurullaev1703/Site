@@ -52,58 +52,6 @@ input[type=text] {
   background-color: transparent;
 }
 
-header {
-  padding: 36px 0;
-  position: relative;
-}
-header .burger-menu {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-header .burger-menu .line {
-  height: 1px;
-  width: 18px;
-  background-color: #202020;
-  margin-bottom: 3px;
-  cursor: pointer;
-}
-header .burger-menu .line:last-child {
-  margin-bottom: 0;
-}
-header .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-}
-header .logo.active {
-  color: #ef5ad8;
-}
-header .logo h1 {
-  font-size: 24px;
-  text-transform: uppercase;
-}
-header .logo h1:hover {
-  color: #ef5ad8;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header nav a {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header nav a:first-child {
-  margin-right: 20px;
-}
-
 form {
   background-color: #ffffff;
   padding: 15px 20px 25px 20px;
@@ -196,7 +144,11 @@ h4 {
 p {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+}
+p.context {
+  font-size: 10px;
+  color: #6A6A6A;
 }
 
 h1 {
@@ -213,6 +165,10 @@ h3 {
 
 h4 {
   font-size: 12px;
+}
+
+section {
+  margin-bottom: 80px;
 }
 
 .cover {
@@ -254,6 +210,15 @@ svg {
 }
 svg:hover {
   fill: #FF3D00;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.card-content {
+  padding: 10px;
 }
 
 header {
@@ -331,6 +296,19 @@ header nav a:first-child {
 }
 .main h1:first-child {
   margin-bottom: 0;
+}
+
+.cards .card {
+  width: 18.4%;
+}
+.cards .card .cover img {
+  border-radius: 8px 8px 0px 0px;
+}
+.cards h2 {
+  margin-bottom: 15px;
+}
+.cards p {
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
