@@ -346,4 +346,15 @@ header nav a:first-child {
   height: 100%;
 }
 
+footer {
+  background-color: #202020;
+  padding: 40px 10px;
+}
+footer .container {
+  align-items: center;
+}
+footer .container h2, footer .container p {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */

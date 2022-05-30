@@ -1,0 +1,12 @@
+footer{
+    background-color: $black;
+    padding: 40px 10px;
+
+    .container{
+        align-items: center;
+
+        h2, p{
+            color: $white;
+        }
+    }
+}
