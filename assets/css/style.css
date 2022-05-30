@@ -280,6 +280,9 @@ header nav a {
   align-items: center;
   justify-content: center;
 }
+header nav a.active svg {
+  fill: #FF3D00;
+}
 header nav a:first-child {
   margin-right: 20px;
 }
@@ -355,6 +358,21 @@ footer .container {
 }
 footer .container h2, footer .container p {
   color: #ffffff;
+}
+
+.profile {
+  background-color: #0085FF;
+  border-radius: 8px;
+  padding: 33px;
+}
+.profile-container {
+  width: 49%;
+}
+.profile-container:first-child {
+  width: 58%;
+}
+.profile-container:last-child {
+  width: 42%;
 }
 
 /*# sourceMappingURL=style.css.map */

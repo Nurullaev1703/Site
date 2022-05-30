@@ -124,8 +124,10 @@ svg{
     } 
 }
 
-@import 'sections/header';
-@import 'sections/main';
-@import 'sections/cards';
-@import 'sections/main-form';
-@import 'sections/footer';
+@import 'sections/main/header';
+@import 'sections/main/main';
+@import 'sections/main/cards';
+@import 'sections/main/main-form';
+@import 'sections/main/footer';
+
+@import 'sections/profile/profile';

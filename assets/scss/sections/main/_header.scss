@@ -51,6 +51,10 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
+
+            &.active svg{
+                    fill: $main;
+            }
         }
 
         a:first-child{
