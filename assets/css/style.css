@@ -59,6 +59,11 @@ form {
   border-radius: 8px;
 }
 
+.options {
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+}
+
 input[type=text], input[type=password], .select {
   width: 100%;
   margin-left: -11px;
@@ -335,6 +340,7 @@ header nav a:first-child {
   margin-bottom: 13px;
 }
 .main-form .select {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
@@ -342,8 +348,30 @@ header nav a:first-child {
 .main-form .select:hover .pick svg {
   fill: #FF3D00;
 }
+.main-form .select:hover .pick .options {
+  display: block;
+}
 .main-form .select .pick {
   height: 100%;
+}
+.main-form .select .options {
+  display: none;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transform: translate(0, 100%);
+}
+.main-form .select .options .opt {
+  padding: 10px 11px;
+  transition: 0.4s;
+  color: #202020;
+}
+.main-form .select .options .opt:hover {
+  background-color: #FF3D00;
+  color: #ffffff;
+  transition: 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */

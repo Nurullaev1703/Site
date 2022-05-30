@@ -10,6 +10,10 @@ form{
     border: 1px solid $stroke;
     border-radius: 8px;
 }
+.options{
+    border: 1px solid $stroke;
+    border-radius: 6px;
+}
 input[type="text"], input[type="password"], .select{
     width: 100%;
     margin-left: -11px;

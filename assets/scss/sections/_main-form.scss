@@ -13,6 +13,7 @@
     }
 
     .select{
+        position: relative;
         display: flex;
         justify-content: space-between;
         margin-bottom: 26px;
@@ -23,10 +24,34 @@
                 svg{
                     fill: $main;
                 }
+                .options{
+                    display: block;
+                }
             }
         }
         .pick{
             height: 100%;
+        }
+
+        .options{
+            display: none;
+            width: 100%;
+            background-color: $white;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            transform: translate(0, 100%);
+
+            .opt{
+                padding: 10px 11px;
+                transition: 0.4s;
+                color: $black;
+                &:hover{
+                    background-color: $main;
+                    color: $white;
+                    transition: 0.4s;
+                }
+            }
         }
     }
 }
