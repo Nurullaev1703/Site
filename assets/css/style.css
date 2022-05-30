@@ -59,7 +59,7 @@ form {
   border-radius: 8px;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], .select {
   width: 100%;
   margin-left: -11px;
   border: 1px solid #E3E3E3;
@@ -68,6 +68,17 @@ input[type=text], input[type=password] {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 10px;
+}
+
+input[type=text]:placeholder-shown, .select {
+  color: #808080;
+}
+
+.select {
+  cursor: pointer;
+}
+.select.active {
+  color: #202020;
 }
 
 .form-container {
@@ -309,6 +320,30 @@ header nav a:first-child {
 }
 .cards p {
   margin-bottom: 8px;
+}
+
+.main-form {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.main-form h1 {
+  margin-bottom: 26px;
+  text-align: center;
+}
+.main-form input {
+  margin-bottom: 13px;
+}
+.main-form .select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.main-form .select:hover .pick svg {
+  fill: #FF3D00;
+}
+.main-form .select .pick {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

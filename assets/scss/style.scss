@@ -10,7 +10,7 @@ form{
     border: 1px solid $stroke;
     border-radius: 8px;
 }
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], .select{
     width: 100%;
     margin-left: -11px;
     border: 1px solid $stroke;
@@ -18,6 +18,16 @@ input[type="text"], input[type="password"]{
     padding: 7px 11px;
     @include font(700);
     font-size: 10px;
+}
+input[type="text"]:placeholder-shown, .select{
+    color: $placeholder;
+}
+.select{
+    cursor: pointer;
+
+    &.active{
+        color: $black;
+    }
 }
 .form-container{
     margin: 0 11px;
@@ -117,3 +127,4 @@ svg{
 @import 'sections/header';
 @import 'sections/main';
 @import 'sections/cards';
+@import 'sections/main-form'
