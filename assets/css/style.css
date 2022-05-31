@@ -46,10 +46,19 @@ li {
   padding: 0;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+a {
+  color: #202020;
+  transition: 0.4s;
+}
+a:hover {
+  color: #FF3D00;
+  transition: 0.4s;
 }
 
 form {
@@ -70,7 +79,7 @@ input[type=text], input[type=password], .select {
   font-size: 10px;
 }
 
-input[type=text]:placeholder-shown, .select {
+input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .select {
   color: #808080;
 }
 
@@ -265,9 +274,11 @@ svg:hover {
   padding: 10px;
 }
 
-.page {
-  width: 100vw;
+.page, .reg {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -448,7 +459,33 @@ footer .container h2, footer .container p {
 }
 
 .page form {
-  width: 30%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page form .form-container {
+  width: 95%;
+}
+.page form h1 {
+  margin-bottom: 26px;
+  text-align: center;
+}
+.page form input {
+  margin-bottom: 13px;
+}
+.page form input:last-child {
+  margin-bottom: 20px;
+}
+.page form .btn {
+  margin-bottom: 46px;
+}
+.page form p {
+  margin-bottom: 13px;
+  text-align: center;
+}
+.page.reg .btn {
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
