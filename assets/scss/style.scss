@@ -47,6 +47,15 @@ input[type="text"]:placeholder-shown, .select{
         }
     }
 
+    &.reverse{
+        @include btn($white);
+
+        &:hover{
+            @include activeBtn($white);
+            color: $second;
+        }
+    }
+
 }
 h1,h2,h3{
     @include font(900);
@@ -80,6 +89,11 @@ section{
 }
 .cover{
     @include cover(100%);
+
+    img{
+        object-fit: cover;
+        border-radius: 12px;
+    }
     
     img, &-content{
         position: absolute;
@@ -124,10 +138,19 @@ svg{
     } 
 }
 
+.page{
+    width: 100vw;
+    height: 100vh;
+}
+
 @import 'sections/main/header';
 @import 'sections/main/main';
 @import 'sections/main/cards';
 @import 'sections/main/main-form';
-@import 'sections/main/footer';
+
+@import 'sections/footer/footer';
 
 @import 'sections/profile/profile';
+@import 'sections/profile/progress';
+
+@import 'sections/auth/auth';

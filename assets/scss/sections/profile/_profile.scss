@@ -2,15 +2,33 @@
     background-color: $second;
     border-radius: 8px;
     padding: 33px;
+    color: $white;
 
     &-container{
         width: 49%;
+        display: flex;
+        justify-content: space-between;
 
-        &:first-child{
-            width: 58%;
-        }
         &:last-child{
-            width: 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+        .box:first-child{
+            width: 50%;
+        }
+        .box:last-child{
+            width: 46%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .title{
+            margin-bottom: 20px;
+
+            h2{
+                margin-bottom: 4px;
+            }
         }
     }
 }
